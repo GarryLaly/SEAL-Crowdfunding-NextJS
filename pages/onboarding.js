@@ -7,7 +7,10 @@ const Onboarding = () => {
     <div className="bg-gray-300 h-screen font-lato text-black">
       <Head>
         <title>Onboarding - SEAL Crowdfunding</title>
-        <meta name="description" content="Alone we can do so little; together we can do so much" />
+        <meta
+          name="description"
+          content="Alone we can do so little; together we can do so much"
+        />
       </Head>
       <div className="max-w-500px mx-auto bg-white h-full flex flex-col justify-between items-center px-8 py-24">
         <div>
