@@ -15,9 +15,13 @@ module.exports = {
       },
       colors: {
         primary: "#0693A6",
+        secondary: "#D0EAEE",
         gray1: "#666666",
+        gray2: "#F5F5F5",
+        label: "#393F45",
       },
       spacing: {
+        "60px": "60px",
       },
     },
   },
