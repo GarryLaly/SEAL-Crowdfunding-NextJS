@@ -9,10 +9,15 @@ module.exports = {
       lato: ["Lato", "Arial", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        "8px": "8px",
+        "10px": "10px",
+      },
       borderRadius: {
         "40px": "40px",
       },
       maxWidth: {
+        "200px": "200px",
         "300px": "300px",
         "500px": "500px",
       },
@@ -22,6 +27,9 @@ module.exports = {
         blue1: "#092C4C",
         gray1: "#666666",
         gray2: "#F5F5F5",
+        gray3: "#F8F8F8",
+        gray4: "rgba(0, 0, 0, 0.24)",
+        gray5: "#D2D2D2",
         label: "#393F45",
       },
       spacing: {
