@@ -1,10 +1,177 @@
 import Head from "next/head";
 import Image from "next/image";
 import Button from "../components/Button";
+import ProjectItem from "../components/ProjectItem";
 
 const Home = () => {
+  const urgentFundraising = [
+    {
+      date: "10 days left",
+      image: "http://placekitten.com/200/100",
+      title: "Helping Children for Studying",
+      publisher: "Kids Nation Foundation",
+      amountCollected: 75000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "12 days left",
+      image: "http://placekitten.com/200/100",
+      title: "Wildfire in The Downtown",
+      publisher: "United Foundation",
+      amountCollected: 100000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "17 days left",
+      image: "http://placekitten.com/200/100",
+      title: "Wildfire Forest",
+      publisher: "Oxygen Foundation",
+      amountCollected: 50000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "24 days left",
+      image: "http://placekitten.com/200/100",
+      title: "Earthquake in Uptown",
+      publisher: "VFT Foundation",
+      amountCollected: 10000000,
+      amountTotal: 100000000,
+    },
+  ];
+
+  const newestFundraising = [
+    {
+      date: "10 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Helping Children for Studying",
+      publisher: "Kids Nation Foundation",
+      amountCollected: 75000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "12 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire in The Downtown",
+      publisher: "United Foundation",
+      amountCollected: 100000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "17 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire Forest",
+      publisher: "Oxygen Foundation",
+      amountCollected: 50000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "24 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Earthquake in Uptown",
+      publisher: "VFT Foundation",
+      amountCollected: 10000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "10 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Helping Children for Studying",
+      publisher: "Kids Nation Foundation",
+      amountCollected: 75000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "12 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire in The Downtown",
+      publisher: "United Foundation",
+      amountCollected: 100000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "17 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire Forest",
+      publisher: "Oxygen Foundation",
+      amountCollected: 50000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "24 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Earthquake in Uptown",
+      publisher: "VFT Foundation",
+      amountCollected: 10000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "10 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Helping Children for Studying",
+      publisher: "Kids Nation Foundation",
+      amountCollected: 75000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "12 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire in The Downtown",
+      publisher: "United Foundation",
+      amountCollected: 100000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "17 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire Forest",
+      publisher: "Oxygen Foundation",
+      amountCollected: 50000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "24 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Earthquake in Uptown",
+      publisher: "VFT Foundation",
+      amountCollected: 10000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "10 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Helping Children for Studying",
+      publisher: "Kids Nation Foundation",
+      amountCollected: 75000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "12 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire in The Downtown",
+      publisher: "United Foundation",
+      amountCollected: 100000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "17 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Wildfire Forest",
+      publisher: "Oxygen Foundation",
+      amountCollected: 50000000,
+      amountTotal: 100000000,
+    },
+    {
+      date: "24 days left",
+      image: "http://placekitten.com/200/120",
+      title: "Earthquake in Uptown",
+      publisher: "VFT Foundation",
+      amountCollected: 10000000,
+      amountTotal: 100000000,
+    },
+  ];
+
   return (
-    <div className="bg-gray-300 h-screen font-lato text-black">
+    <div className="bg-gray-300 font-lato text-black">
       <Head>
         <title>Home - SEAL Crowdfunding</title>
         <meta
@@ -12,7 +179,7 @@ const Home = () => {
           content="Alone we can do so little; together we can do so much"
         />
       </Head>
-      <div className="max-w-500px mx-auto bg-gray3 h-full p-8">
+      <div className="max-w-500px mx-auto bg-gray3 p-8">
         <div className="flex flex-row items-center justify-between mb-10">
           <div>
             <div className="text-sm">Good morning,</div>
@@ -27,35 +194,34 @@ const Home = () => {
         </div>
         <div>
           <div className="font-bold text-base mb-4">Urgent Fundraising</div>
-          <div className="max-w-200px text-xs bg-white rounded-lg overflow-hidden">
-            <div className="relative">
-              <Image
-                src="http://placekitten.com/200/100"
-                width="200"
-                height="100"
+          <div className="flex flex-row overflow-x-auto flex-nowrap">
+            {urgentFundraising.map((item, index) => (
+              <ProjectItem
+                key={index}
+                date={item.date}
+                image={item.image}
+                title={item.title}
+                publisher={item.publisher}
+                amountCollected={item.amountCollected}
+                amountTotal={item.amountTotal}
               />
-              <div className="bg-gray4 absolute top-0 left-0 m-3 rounded text-8px px-2 text-white">
-                12 days left
-              </div>
-            </div>
-            <div className="p-3">
-              <div className="font-bold">Helping Children for Studying</div>
-              <div className="text-10px">Kids Nation Foundation</div>
-              <div className="mt-2 bg-gray5 h-1 w-full rounded-full mb-1">
-                <div
-                  className="bg-primary rounded-full h-1"
-                  style={{ width: "75%" }}
-                ></div>
-              </div>
-              <div className="flex flex-row items-center justify-between">
-                <div className="font-bold">
-                  Rp 1.735.000{" "}
-                  <span className="font-normal text-10px">collected</span>
-                </div>
-                <div className="font-semibold text-primary">75%</div>
-              </div>
-            </div>
+            ))}
           </div>
+          <div className="font-bold text-base mt-6 mb-4">
+            Newest Fundraising
+          </div>
+          {newestFundraising.map((item, index) => (
+            <ProjectItem
+              key={index}
+              date={item.date}
+              image={item.image}
+              title={item.title}
+              publisher={item.publisher}
+              amountCollected={item.amountCollected}
+              amountTotal={item.amountTotal}
+              isHorizontal={true}
+            />
+          ))}
         </div>
       </div>
     </div>
