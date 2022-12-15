@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/Button";
+import Header from "../components/Header";
 import ProjectItem from "../components/ProjectItem";
 import { toThousand } from "../helpers";
 
@@ -19,19 +20,7 @@ const Detail = () => {
         />
       </Head>
       <div className="max-w-500px mx-auto bg-gray3 p-8">
-        <div className="flex flex-row items-center justify-between mb-6">
-          <Link href="/home">
-            <Image
-              src="/icons/ic_back.png"
-              width={26}
-              height={25}
-              className="cursor-pointer"
-              alt="icon"
-            />
-          </Link>
-          <div className="text-base font-bold">Fundraising Detail</div>
-          <div>&nbsp;</div>
-        </div>
+        <Header title="Fundraising Detail" url="/home" />
         <div className="relative rounded-lg overflow-hidden">
           <Image
             src="http://placekitten.com/500/300"
