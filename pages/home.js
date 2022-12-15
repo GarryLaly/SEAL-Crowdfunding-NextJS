@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../components/Button";
 import ProjectItem from "../components/ProjectItem";
 
@@ -185,13 +186,15 @@ const Home = () => {
             <div className="text-sm">Good morning,</div>
             <div className="font-bold text-sm">Garry!</div>
           </div>
-          <Image
-            src="/icons/ic_profile.png"
-            width={26}
-            height={25}
-            className="cursor-pointer"
-            alt="icon"
-          />
+          <Link href="/my-dashboard">
+            <Image
+              src="/icons/ic_profile.png"
+              width={26}
+              height={25}
+              className="cursor-pointer"
+              alt="icon"
+            />
+          </Link>
         </div>
         <div>
           <div className="font-bold text-base mb-4">Urgent Fundraising</div>
