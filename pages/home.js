@@ -190,6 +190,7 @@ const Home = () => {
             width={26}
             height={25}
             className="cursor-pointer"
+            alt="icon"
           />
         </div>
         <div>

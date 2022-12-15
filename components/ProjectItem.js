@@ -35,7 +35,7 @@ const ProjectItem = ({
         </div>
         <div className="flex-1 p-3">
           <div className="font-bold">{title}</div>
-          <div className="text-10px">{publisher}</div>
+          <div className="text-gray1 text-10px">{publisher}</div>
           <div
             className={`${
               isHorizontal ? "mt-4" : "mt-2"
