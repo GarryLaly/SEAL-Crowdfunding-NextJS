@@ -30,6 +30,8 @@ module.exports = {
         gray4: "rgba(0, 0, 0, 0.24)",
         gray5: "#D2D2D2",
         label: "#393F45",
+        orange: "#E67E22",
+        green: "#27AE60",
       },
       spacing: {
         "60px": "60px",
